@@ -1,0 +1,56 @@
+
+.page-header{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.page-header .header-btns Button{
+    margin-right: 5px;
+}
+.pf-c-table{
+margin-top: 10px;
+max-width: 40%;
+}
+.pf-c-table tr > *{
+    padding: 0px;
+}
+.attendance-container{
+    width: 50%;
+}
+.pf-c-page__main-section{
+    background: white;
+}
+.pf-c-page__header{
+background-color: #EEEEEE;
+display: flex;
+justify-content: flex-end;
+
+}
+.pf-c-page__header .pf-c-button.pf-m-primary{
+    background-color: #EEEEEE;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 25px;
+    
+
+    
+}
+.pf-c-page__header .pf-c-button.pf-m-primary:hover{
+    border-bottom: 2px solid #06c;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}
+#simple-form-name-01{
+    width:50%
+}
+.pf-c-form__group-control .pf-c-button{
+    margin-left: 15px;
+}
+
+.pf-c-table,tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
