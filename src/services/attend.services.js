@@ -39,7 +39,7 @@ const RecordAttendance = (data) => httpService
 });
 
 const ClearData = () => httpService
-.post(`/mod/tsugi-react-base/api/getrows.php`)
+.post(`/mod/tsugi-react-base/api/clear.php`)
 .then(({ data }) => data)
 .catch((err) => {
   // errorCatcher(err.response.data);

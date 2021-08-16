@@ -23,7 +23,7 @@ max-width: 40%;
 .pf-c-page__header{
 background-color: #EEEEEE;
 display: flex;
-justify-content: flex-end;
+justify-content: space-between;
 
 }
 .pf-c-page__header .pf-c-button.pf-m-primary{

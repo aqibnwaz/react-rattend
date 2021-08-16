@@ -9,16 +9,18 @@ export const RecordAttendance: React.FC = () => {
   const [codeError,setcodeError]=useState('');
     const data= 
       {
-        "code": code
+        "code": "1230",
+        "grade": "1",
+        "match": ""
     }
     
     function submitAttendance(){
-     if(code=="123456"){
+     if(code=="1230"){
       attendServices.RecordAttendance(data);
       setcodeError('Success');
      }else
      {
-      setcodeError("Your code is invalid/Enter 12346 for success");
+      setcodeError("Your code is invalid/Enter 1230 for success");
     }
   }
   return (

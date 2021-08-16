@@ -8,8 +8,8 @@ const http = axios.create({ baseURL: `${baseURL}/` });
 function getAuthHeader() {
 
   let authHeader = { 
-      "access-control-allow-origin" : "*",
-      'Content-Type': 'application/x-www-form-urlencoded',
+      // "access-control-allow-origin" : "*",
+       'Content-Type': 'application/text',
       'X-Tsugi-Authorization': _TSUGI.react_token,
   };
  
