@@ -62,3 +62,4 @@ if ( $old_code == $_POST['code'] ) {
 }
 
 echo(json_encode($retval));
+

@@ -21,7 +21,7 @@ module.exports = merge(common('production'), {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: 'http://localhost/tsugi/mod/tsugi-react-base/dist/',
+    publicPath: 'http://localhost/tsugi/mod/react-rattend/dist/',
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -43,7 +43,7 @@ module.exports = merge(common('production'), {
         loader: 'string-replace-loader',
         options: {
           search: '__TSUGI_RELATIVE_PATH__',
-          replace: '/py4e/mod/tsugi-react-base',
+          replace: '/mod/react-rattend',
           flags: 'g'
         }
       }

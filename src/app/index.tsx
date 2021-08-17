@@ -6,16 +6,16 @@ import { AppRoutes } from '@app/routes';
 import '@app/app.css';
 
 const App: React.FunctionComponent = () => {
-  var bname="__TSUGI_RELATIVE_PATH__";
-  console.log('App running at:', bname);
-  console.log(_TSUGI);
-  return (
-  <Router basename={ bname }>
-    <AppLayout>
-      <AppRoutes />
-    </AppLayout>
-  </Router>
-  );
+   var bname = "__TSUGI_RELATIVE_PATH__";
+   console.log('App running at:', bname);
+   console.log(_TSUGI);
+   return (
+      <Router basename={bname}>
+         <AppLayout>
+            <AppRoutes />
+         </AppLayout>
+      </Router>
+   );
 };
 
 export default App;
