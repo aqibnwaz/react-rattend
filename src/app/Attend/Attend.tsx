@@ -44,9 +44,9 @@ const Attend: React.FunctionComponent = () => {
     if ( _TSUGI.instructor ) {
       const result = attendServices.GetAttendData();
       result.then(data => {
-        console.log(data)
+        //console.log(data)
         setRows( data.map(data1 => {
-          
+          console.log(data1)
         return {cells: [data1.user_id, data1.attend, data1.ipaddr]}
        }))
       })
@@ -62,7 +62,13 @@ const Attend: React.FunctionComponent = () => {
     <div className="page-header">
     <p>Welcome {_TSUGI.user_displayname} from {_TSUGI.context_title} (instructor)</p>
     <div className="header-btns"> 
-    <Button variant="primary" onClick={ ()=>attendServices.ClearData()
+    <Button variant="primary" onClick={ ()=>{
+     const result =  attendServices.ClearData();
+     result.then(data => {
+      setRows([]); 
+      setColumn([]);    
+     })
+    }
     }>
           Clear data
     </Button>
