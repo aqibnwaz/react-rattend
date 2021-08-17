@@ -3,7 +3,6 @@
 use \Tsugi\Util\U;
 
 require_once "../config.php";
-
 $data = file_get_contents("dist/index.html");
 
 // If we are running the dist version and have a refresh, the _TSUGI value should be
@@ -30,8 +29,8 @@ echo($OUTPUT->headerData());
 <script>
 window.sessionStorage.setItem('_TSUGI',  JSON.stringify(_TSUGI));
 console.log("Stored _TSUGI in sessionStorage");
-window.sessionStorage.setItem('_old_code',  '<?php echo $old_code;?>');
-    console.log($old_code);
+
+   // console.log($old_code);
 </script>
 <?php
 echo(substr($data,$pos));

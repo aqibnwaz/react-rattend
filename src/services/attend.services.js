@@ -11,17 +11,6 @@ const GetAttendData = () => httpService
     return Promise.reject(err.response.data);
   });
 
-
-
-const GetInstructorData = () => httpService
-.get(`/tsugi/api/settings.php`)
-.then(({ data }) => data)
-.catch((err) => {
-  console.log(err);
-  errorCatcher(err.response.data);
-  return Promise.reject(err.response.data);
-});
-
 const UpdateSettings = (data) => httpService
 .post(`/tsugi/api/settings.php`,data)
 .then(({ data }) => data)
@@ -46,4 +35,4 @@ const ClearData = () => httpService
   // return Promise.reject(err.response.data);
 });
 
-export default {GetAttendData,UpdateSettings,RecordAttendance,GetInstructorData,ClearData};
+export default {GetAttendData,UpdateSettings,RecordAttendance,ClearData};
